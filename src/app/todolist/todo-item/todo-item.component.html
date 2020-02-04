@@ -1,0 +1,14 @@
+<div [ngClass]="{'is-complete': todo.completed}" class="list-group-item item" >
+  <p>
+    <input
+      (change)="onToggle(todo)"
+      type="checkbox"
+      id="{{ todo.id }}"
+      [checked]="todo.completed"
+    />
+    <label for="{{ todo.id }}">
+      {{ todo.title }}
+    </label>
+    <i class="fa fa-trash" style='color:red' (click)="onDelete(todo)"></i>
+  </p>
+</div>

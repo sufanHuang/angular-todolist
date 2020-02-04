@@ -1,0 +1,12 @@
+.item{
+  padding-left: 350px;
+  background-color: azure;
+}
+label{
+  text-align: center;
+  padding: 10px;
+}
+
+.is-complete {
+  color: grey;
+}

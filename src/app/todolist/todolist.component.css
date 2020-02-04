@@ -1,0 +1,14 @@
+.app{
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Courier New";
+}
+
+
+h1{
+  color: dimgray;
+  font-weight: bold;
+}
+.item-list{
+  text-align:left;
+}

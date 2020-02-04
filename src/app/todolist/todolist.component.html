@@ -1,0 +1,18 @@
+<div class="app">
+  <div>
+    <h1> A Simple Todo App</h1>
+    <h5>Powered by Angular</h5>
+  </div>
+
+  <hr>
+  <app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+  <app-todo-item
+    *ngFor="let todo of todos"
+    class="list-group list-group-flush item-list"
+    [todo]="todo"
+    (deleteTodo)="deleteTodo($event)"
+  >
+  </app-todo-item>
+</div>
+
+
